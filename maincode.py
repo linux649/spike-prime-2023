@@ -28,6 +28,5 @@ async def trying():
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (500), 0)
     await motor.run_for_degrees(port.E, 90, (150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (500), 0)
-robot = PenguinBot()
 # runloop.run(robot.main())
 runloop.run(trying())
