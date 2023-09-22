@@ -25,14 +25,14 @@ async def trying():
     await motor.run_for_degrees(port.D, 150, (-220))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-400), 0)
     await motor.run_for_degrees(port.A,-140, (350))
-    await motor.run_for_degrees(port.D, 150, (580))
+    await motor.run_for_degrees(port.D, 150, (580)) # mission 2
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (500), 0)
     await motor.run_for_degrees(port.E, 90, (150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (200), 0)
     await motor.run_for_degrees(port.E, 150, (150))
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (98), 0)
-    await motor.run_for_degrees(port.D, 150, (-230))
-    motor_pair.move_for_degrees(motor_pair.PAIR_1, (-1), 0)
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (99), 0)
+    await motor.run_for_degrees(port.D, 200, (-250))
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-1), 0)
+    
 
-# runloop.run(robot.main())
 runloop.run(trying())
