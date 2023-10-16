@@ -54,9 +54,9 @@ async def Main():
     await motor.run_for_degrees(port.C,150, (700))
     await motor.run_for_degrees(port.A,315, (300)) # mission 4
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (300), 0)
-    await motor.run_for_degrees(port.E, 100, (230))
+    await motor.run_for_degrees(port.E, 100, (260))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (240), 0)
     await motor.run_for_degrees(port.A,-100, (360))
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (150), 0)
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-100), 0)
 
 runloop.run(Main())
