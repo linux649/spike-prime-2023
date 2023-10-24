@@ -1,5 +1,6 @@
 # from spike import PrimeHub, Lightmatrix, Button, statusLight, ForceSensor, notionsensor, Speaker, ColorSensor, App, DistanceSensor, Motor, MotorPair
 # from spike.contral import waith_for_seconds, wait_until, Tier
+
 from hub import light_matrix
 from hub import light
 import runloop
@@ -21,15 +22,15 @@ async def Main():
     await motor.run_for_degrees(port.D, 150, (580))
     await motor.run_for_degrees(port.E, 100, (150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (50), 0)
-    await motor.run_for_degrees(port.A,-100, (150))
+    await motor.run_for_degrees(port.A,  -100, (150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (280), 0)
     await motor.run_for_degrees(port.D, 150, (-220))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-400), 0)
     await motor.run_for_degrees(port.A,-140, (350))
     await motor.run_for_degrees(port.D, 150, (580)) # mission 2
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (500), 0)
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (510), 0)
     await motor.run_for_degrees(port.E, 90, (150))
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (193), 0)
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (187), 0)
     await motor.run_for_degrees(port.E, 150, (150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, 90, 0, velocity=540)
     await motor.run_for_degrees(port.D, -150, 540)
@@ -39,28 +40,30 @@ async def Main():
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (50), 0)
     await motor.run_for_degrees(port.D, -150, 540)
     await runloop.sleep_ms(1000)
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-60), 0)
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-50), 0)
     await motor.run_for_degrees(port.D, 150, (580)) # mission 3
     await motor.run_for_degrees(port.E,150, (-150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (250), 0)
     await motor.run_for_degrees(port.E,240, (-150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (460), 0)
     await motor.run_for_degrees(port.A,315, (-300))
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-100), 0)
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-120), 0)
     await motor.run_for_degrees(port.C,170, (-700))
     await motor.run_for_degrees(port.C,-100, (700))
-    await motor.run_for_degrees(port.D, 160, (-100))
+    await motor.run_for_degrees(port.D, 160, (-80))
     await motor.run_for_degrees(port.C,150, (700))
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (60), 0)
     await motor.run_for_degrees(port.A,315, (300)) # mission 4
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (300), 0)
-    await motor.run_for_degrees(port.E, 100, (260))
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (240), 0)
-    await motor.run_for_degrees(port.A,-110, (360))
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-100), 0)
-    #await motor.run_for_degrees(port.E, 45, 360) # to y7
-    #await motor_pair.move_for_degrees(motor_pair.PAIR_1, 360, 0)
-    #await motor.run_for_degrees(port.E, 45, 360)
-    #await motor_pair.move_for_degrees(motor_pair.PAIR_1, 720, 0)
-
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (280), 0)
+    await motor.run_for_degrees(port.E, 100, (304))
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (237), 0)
+    await motor.run_for_degrees(port.A,-100, (370))
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-120), 0)
+    await motor.run_for_degrees(port.A,-100, (280)) # Going home
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (700), 0)
+    await motor.run_for_degrees(port.A,-100, (280)) 
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (450), 0)
+    await motor.run_for_degrees(port.A,-100, (280))
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (200), 0)
 
 runloop.run(Main())
