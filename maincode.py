@@ -59,7 +59,7 @@ async def Main():
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (237), 0)
     await motor.run_for_degrees(port.A,-100, (370))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-120), 0)
-    await motor.run_for_degrees(port.A,-100, (280)) # Going home
+    await motor.run_for_degrees(port.A,-110, (280)) # Going home
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (700), 0)
     await motor.run_for_degrees(port.A,-100, (280)) 
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (450), 0)
