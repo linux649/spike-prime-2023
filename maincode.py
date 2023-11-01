@@ -22,7 +22,7 @@ async def Main():
     await motor.run_for_degrees(port.D, 150, (580))
     await motor.run_for_degrees(port.E, 100, (150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (50), 0)
-    await motor.run_for_degrees(port.A,  -100, (150))
+    await motor.run_for_degrees(port.A,-100, (150))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (280), 0)
     await motor.run_for_degrees(port.D, 150, (-220))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-400), 0)
@@ -55,13 +55,13 @@ async def Main():
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (60), 0)
     await motor.run_for_degrees(port.A,315, (300)) # mission 4
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (280), 0)
-    await motor.run_for_degrees(port.E, 100, (304))
+    await motor.run_for_degrees(port.E, 105, (304))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (237), 0)
-    await motor.run_for_degrees(port.A,-100, (370))
+    await motor.run_for_degrees(port.A,-120, (370))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (-120), 0)
-    await motor.run_for_degrees(port.A,-110, (280)) # Going home
-    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (700), 0)
-    await motor.run_for_degrees(port.A,-100, (280)) 
+    await motor.run_for_degrees(port.A,-100, (280)) # Going home
+    await motor_pair.move_for_degrees(motor_pair.PAIR_1, (750), 0)
+    await motor.run_for_degrees(port.A,-100, (280))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (450), 0)
     await motor.run_for_degrees(port.A,-100, (280))
     await motor_pair.move_for_degrees(motor_pair.PAIR_1, (200), 0)
