@@ -1,6 +1,5 @@
 # Mission Plan for Competition
 
-## People 
 ### Starting:
 
 `left side - Ethan, Mujtaba`
