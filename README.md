@@ -13,5 +13,5 @@ M4,14,15 is on `Program 3.llsp3`(OLD) and `Program 7.llsp3` (MC-Anna, MASTERPIEC
 
 M15,14 is on `collecting_humans.py` and `HC.llsp3` (MC-Sam, MC-Noah, 1x+1x Audience)
 
-The GNU GPLv3 license gives no warranty or liability for any code; Any code that does not work, the contributers
-have no liability and there is no warranty for the code.
+The GNU GPLv3 license gives no warranty or liability for any code; Any code that does not work, the SIS LEGO League Team 2023
+have no liability and there is no warranty for this code.
