@@ -1,5 +1,7 @@
 # spike-prime-2023
 
+#### License Notice
+
 ```
     SIS 2023 Lego League Coding
     Copyright (C) 2023 linux-coding649, Godofwar55
