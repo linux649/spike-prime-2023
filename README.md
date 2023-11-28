@@ -23,7 +23,7 @@
 
 SIS 2023 Lego League Python Coding
 
-M1,2,3,5 is on `maincode.py` and `Project 1.llsp3` (3D Cinema, Theater Change, IE, AR)
+M1,2,3,5 is on `maincode.py`(OLD), `the_first_program.py` and `Project 1.llsp3`(OLD) (3D Cinema, Theater Change, IE, AR)
 
 M13,7,6 is on `Program 1.llsp3`(OLD) and `Project 6.llsp3` (Craft Creator, Hologram Performer, Mu-Co-L)
 
