@@ -1,5 +1,7 @@
 # spike-prime-2023
 
+(Any reference to SIS is referring to Somerville Intermediate School)
+
 #### License Notice
 
 ```
