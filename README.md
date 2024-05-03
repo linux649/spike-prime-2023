@@ -4,7 +4,7 @@
 
 ```
     SIS 2023 Lego League Coding
-    Copyright (C) 2023 linux-coding649, Godofwar55
+    Copyright (C) 2023 linux649, Godofwar55
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
